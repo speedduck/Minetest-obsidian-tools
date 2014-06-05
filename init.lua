@@ -1,6 +1,6 @@
-minetest.register_tool("sean:sword_obsidian", {
+minetest.register_tool("obsidiantools:sword_obsidian", {
 	description = "Obsidian Sword",
-	inventory_image = "sean_sword_obsidian.png",
+	inventory_image = "obsidiantools_sword_obsidian.png",
 	tool_capabilities = {
 		full_punch_interval = 0.8,
 		max_drop_level=1,
@@ -10,9 +10,9 @@ minetest.register_tool("sean:sword_obsidian", {
 		damage_groups = {fleshy=7},
 	}
 })
-minetest.register_tool("sean:pick_obsidian", {
+minetest.register_tool("obsidiantools:pick_obsidian", {
 	description = "Obsidian Pick",
-	inventory_image = "sean_pick_obsidian.png",
+	inventory_image = "obsidiantools_pick_obsidian.png",
 	tool_capabilities = {
 		full_punch_interval = 0.8,
 		max_drop_level=1,
@@ -23,7 +23,7 @@ minetest.register_tool("sean:pick_obsidian", {
 	}
 })
 minetest.register_craft({
-	output = 'sean:sword_obsidian',
+	output = 'obsidiantools:sword_obsidian',
 	recipe = {
 		{'sean:obsidian_alloy'},
 		{'sean:obsidian_alloy'},
@@ -31,7 +31,7 @@ minetest.register_craft({
 	}
 })
 minetest.register_craft({
-	output = 'sean:pick_obsidian',
+	output = 'obsidiantools:pick_obsidian',
 	recipe = {
 		{'sean:obsidian_alloy', 'sean:obsidian_alloy', 'sean:obsidian_alloy'},
 		{'', 'default:stick', ''},
@@ -39,7 +39,7 @@ minetest.register_craft({
 	}
 })
 
-minetest.register_craftitem("sean:obsidian_alloy", {
+minetest.register_craftitem("obsidiantools:obsidian_alloy", {
 	description = "Obisidian Alloy",
 	inventory_image = "obsidian_alloy.png",
  
@@ -52,7 +52,7 @@ minetest.register_craftitem("sean:obsidian_alloy", {
 })
 
 minetest.register_craft({
-	output = 'sean:obsidian_alloy',
+	output = 'obsidiantools:obsidian_alloy',
 	recipe = {
 		{'default:obsidian','default:bronze_ingot','default:gold_ingot'},
 		{'default:obsidian','default:bronze_ingot','default:gold_ingot'},
