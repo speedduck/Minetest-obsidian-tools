@@ -58,3 +58,27 @@ minetest.register_craft({
 		{'default:obsidian','default:bronze_ingot','default:gold_ingot'},
 	}
 })
+
+minetest.register_node("obsidiantools:obsidianalloyblock", {
+	description = "Obsidian Alloy Block",
+	tiles = {"obsidiantools_obsidian_alloy_block.png"},
+	is_ground_content = true,
+	groups = {cracky=1,level=2}
+})
+
+
+minetest.register_craft({
+	output = 'obsidiantools:obsidianalloyblock',
+	recipe = {
+		{'obsidiantools:obsidian_alloy', 'obsidiantools:obsidian_alloy', 'obsidiantools:obsidian_alloy'},
+		{'obsidiantools:obsidian_alloy', 'obsidiantools:obsidian_alloy', 'obsidiantools:obsidian_alloy'},
+		{'obsidiantools:obsidian_alloy', 'obsidiantools:obsidian_alloy', 'obsidiantools:obsidian_alloy'},
+	}
+})
+
+minetest.register_craft({
+	output = 'obsidiantools:obsidian_alloy 9',
+	recipe = {
+		{'obsidiantools:obsidianalloyblock'},
+	}
+})
